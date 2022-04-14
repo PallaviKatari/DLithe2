@@ -48,6 +48,27 @@ namespace DLithe2
             char f = 'A';
             Console.WriteLine($"Boolean value is:{e} and Character value is:{f}");
 
+            //Typecasting and Type Conversion
+            double g = 12.34;
+            Console.WriteLine("Double Value is:{0}", g);
+            int h = (int)g;
+            Console.WriteLine("Double converted to int value:{0}", h);
+            Console.WriteLine($"Convert the int value {h} to char" + Convert.ToChar(h));
+            Console.WriteLine("Convert the given integer value to char"+Convert.ToChar(65));
+
+            //Accept Trainee Details
+            int TID;
+            string TName;
+            string TDes;
+            Console.WriteLine("Enter the Trainee ID");//100
+            //Accept Input- Console.ReadLine()
+            TID =Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Trainee Name and Designation");
+            TName =Console.ReadLine();
+            TDes =Console.ReadLine();
+            //\n - newline
+            Console.WriteLine($"The Trainee ID is {TID}.\nTrainee Name is {TName}.\nTrainee Designation is {TDes}");
+
         }
     }
 
