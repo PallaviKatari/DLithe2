@@ -23,6 +23,13 @@ namespace CSharp_Concepts
             ControlStatements controlStatements = new ControlStatements();
             //static method is called/invoked
             Conditionalif();
+            ForLoop();
+            WhileLoop();
+            doWhileLoop();
+            EvenOdd();
+            //Parameterised Method
+            Square(2);
+            EmpDetails(1, "John");
             //instance method is called/invoked
             controlStatements.Conditionalswitch();
 
@@ -92,6 +99,90 @@ namespace CSharp_Concepts
             }
 
         }
+        /// <summary>
+        /// LOOPING STATEMENTS
+        /// 1. ENTRY CONTROLLED - for,while
+        /// 2. EXIT CONTROLLED - do-while
+        /// </summary>
+        public static void ForLoop()
+        {
+            Console.WriteLine("FOR LOOP");
+            //Syntax
+            for(int i = 0;i< 10; i++)
+            {
+                Console.WriteLine("The value is:{0}", i);
+            }
+
+        }
+        /// <summary>
+        /// WHILE LOOP
+        /// </summary>
+        public static void WhileLoop()
+        {
+            Console.WriteLine("WHILE LOOP");
+            //Syntax
+            int j=10;
+            while(j<10)
+            {
+                Console.WriteLine("The value is:{0}", j);
+                j++;
+            }
+
+        }
+        /// <summary>
+        /// DO-WHILE
+        /// </summary>
+        public static void doWhileLoop()
+        {
+            Console.WriteLine("DO WHILE LOOP");
+            //Syntax
+            int k = 10;
+            do
+            {
+                Console.WriteLine("The value is:{0}", k);
+                k++;
+            }while(k<10);
+
+        }
+        /// <summary>
+        /// EVEN ODD PROGRAM
+        /// </summary>
+        public static void EvenOdd()
+        {
+            int number;
+            Console.WriteLine("Enter the number");
+            number = Convert.ToInt32(Console.ReadLine());
+            if(number%2==0)
+            {
+                Console.WriteLine("Even Number");
+            }
+            else
+            {
+                Console.WriteLine("Odd Number");
+            }
+
+        }
+        /// <summary>
+        /// Square Functionality
+        /// </summary>
+        /// <param name="a"></param>
+        public static void Square(int a)
+        {
+            int x;
+            x = a * a;
+            Console.WriteLine("Square is:{0}",x);
+        }
+        /// <summary>
+        /// Employee Details
+        /// </summary>
+        /// <param name="EID"></param>
+        /// <param name="EName"></param>
+        public static void EmpDetails(int EID,string EName)
+        {
+            Console.WriteLine("Employee ID is:{0}", EID);
+            Console.WriteLine("Employee Name is:{0}", EName);
+        }
         
+
     }
 }
