@@ -8,17 +8,23 @@ namespace CSharp_Concepts
 {
     internal class Arrays
     {
+        public static void Main()
+        {
+            //Arrays_1D();
+            Arrays_2D();
+
+        }
         /// <summary>
         /// ARRAY-COLLECTION OF ELEMENTS UNDER A SINGLE DATATYPE
         /// </summary>
-        public static void Main()
+        public static void Arrays_1D()
         {
             //SINGLE DIMENSIONAL ARRAY
-            int[] numbers=new int[] { 1, 2, 3, 4, 5};
+            int[] numbers = new int[] { 1, 2, 3, 4, 5 };
             int[] numbers2 = new int[4] { 1, 2, 3, 4 };
             int[] numbers3 = { 1, 2, 3 };
             //looping through the elements in the array numbers
-            foreach(int number in numbers)
+            foreach (int number in numbers)
             {
                 Console.WriteLine(number);
             }
@@ -47,28 +53,53 @@ namespace CSharp_Concepts
             Console.WriteLine("Sorted Array");
             Array.Sort(random_numbers);
             Array.Reverse(random_numbers);
-            foreach(int number in random_numbers)
+            foreach (int number in random_numbers)
             {
                 Console.WriteLine(number);
             }
             Console.WriteLine("*******************************");
             int size;
             Console.WriteLine("Enter the size of the array");
-            size=Convert.ToInt32(Console.ReadLine());
+            size = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[size];
             //Get the input from the user for the array arr
-            for(int i=0; i<arr.Length; i++) //0<7 1<7 2<7 ... 7<7
+            for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine("Enter the value {0}:", (i + 1)); //
-                arr[i]=Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the value {0}:", (i + 1));
+                arr[i] = Convert.ToInt32(Console.ReadLine());
             }
             //Display the elements in the array arr
             Console.WriteLine("Elements in the array arr");
-            foreach(int arrayelements in arr)
+            foreach (int arrayelements in arr)
             {
                 Console.WriteLine(arrayelements);
             }
 
+
+        }
+        /// <summary>
+        /// TWO DIMENSIONAL ARRAY
+        /// </summary>
+        public static void Arrays_2D()
+        {
+            int[,] array = new int[,]
+            {
+                {1,2,3},
+                {4,5,6}
+            };
+            Console.WriteLine("Elements in my 2D array");
+            //Looping through the rows
+            for(int i = 0;i<2;i++) //0<2 1<2
+            {
+                //Looping through the columns
+                for(int j = 0;j<3;j++) //0<3 1<3 2<3 3<3
+                {
+                    Console.Write(array[i, j]);
+                    Console.Write("\t");
+                }
+                Console.WriteLine();
+
+            }
 
         }
     }
