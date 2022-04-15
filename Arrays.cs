@@ -11,7 +11,8 @@ namespace CSharp_Concepts
         public static void Main()
         {
             //Arrays_1D();
-            Arrays_2D();
+            //Arrays_2D();
+            Jagged_Array();
 
         }
         /// <summary>
@@ -101,6 +102,28 @@ namespace CSharp_Concepts
 
             }
 
+        }
+        /// <summary>
+        /// JAGGED ARRAY-ARRAY OF ARRAYS
+        /// </summary>
+        public static void Jagged_Array()
+        {
+            int[][] jarray = new int[3][]
+            {
+                new int[2]{1,2}, //0
+                new int[3]{1,2,3}, //1
+                new int[4]{1,2,3,4} //2
+            };
+            //Looping through the elements in the jarray
+            for(int i=0;i<jarray.Length;i++) //0<3
+            {
+                for(int j=0;j<(jarray[i]).Length;j++) //0<4
+                {
+                    Console.Write(jarray[i][j]);
+                    Console.Write("\t");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
