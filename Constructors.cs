@@ -44,13 +44,32 @@ namespace CSharp_Concepts
         {
             Console.WriteLine("Sum is:{0}", a + b);//10+20=30
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
         public Constructors(int id,string name)
         {
             Console.WriteLine($"ID is {id} and Name is {name}");
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="id"></param>
         public Constructors(string name, int id)
         {
             Console.WriteLine($"ID is {id} and Name is {name}");
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="address"></param>
+        public Constructors(string name, string address)
+        {
+            Console.WriteLine($"Name is {name} and Address is {address}");
         }
         public static void Main()
         {
@@ -62,9 +81,10 @@ namespace CSharp_Concepts
             Constructors c2 = new Constructors(10, "Jancy");
             //automatically invokes the constructor with (string,int) format
             Constructors c3 = new Constructors("Nancy", 100);
+            //automatically invokes the constructor with (string,string) format
+            Constructors c4 = new Constructors("John", "Bangalore");
             //invoking the instance method
             c.Display();
-
 
         }
 

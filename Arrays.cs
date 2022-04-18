@@ -10,8 +10,8 @@ namespace CSharp_Concepts
     {
         public static void Main()
         {
-            //Arrays_1D();
-            //Arrays_2D();
+            Arrays_1D();
+            Arrays_2D();
             Jagged_Array();
 
         }
@@ -85,8 +85,9 @@ namespace CSharp_Concepts
         {
             int[,] array = new int[,]
             {
-                {1,2,3},
-                {4,5,6}
+            //   0,1,2
+                {1,2,3}, //0
+                {4,5,6}  //1
             };
             Console.WriteLine("Elements in my 2D array");
             //Looping through the rows
@@ -110,12 +111,14 @@ namespace CSharp_Concepts
         {
             int[][] jarray = new int[3][]
             {
+                        // 0,1,2,3
                 new int[2]{1,2}, //0
                 new int[3]{1,2,3}, //1
                 new int[4]{1,2,3,4} //2
             };
+            Console.WriteLine("Elements in the Jagged array");
             //Looping through the elements in the jarray
-            for(int i=0;i<jarray.Length;i++) //0<3
+            for (int i=0;i<jarray.Length;i++) //0<3
             {
                 for(int j=0;j<(jarray[i]).Length;j++) //0<4
                 {

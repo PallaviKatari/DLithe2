@@ -57,7 +57,7 @@ namespace CSharp_Concepts
 				//Inner Loop
 				for (int j = 1; j <= i; j++) //2<=1 3<=2 4<=3 1<=4 1<=5
 				{
-					Console.Write(j +" "); //displays in the same line
+					Console.Write("$"); //displays in the same line
 				}
 				Console.WriteLine(); // new line after the inner loop terminates
 			}

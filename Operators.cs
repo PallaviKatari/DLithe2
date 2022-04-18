@@ -17,7 +17,7 @@ namespace CSharp_Concepts
         /// </summary>
         public static void Main()
         {
-            // Arithmetic
+            // Arithmetic  variables-operands
             int num1 = 100;
             int num2 = 21;
             int num3;
@@ -26,7 +26,7 @@ namespace CSharp_Concepts
             num3 = num1 % num2;
             Console.WriteLine("Remainder Value is:{0}", num3);
 
-            //Arithmetic Assignment
+            //Arithmetic Assignment += -=
             int a = 30;
             int b = 20;
             a -= b;//-=  a=a-b
@@ -34,10 +34,11 @@ namespace CSharp_Concepts
 
             //Increment and Decrement
             //++ and --
-            //pre and post
+            //pre(increments and assigns) and post(assigns and then increments)
             int i = 10;
-            Console.WriteLine("Pre Increment:{0}", ++i);
-            Console.WriteLine("Post Increment:{0}", i++);
+            Console.WriteLine("Pre Increment:{0}", ++i); //11
+            Console.WriteLine("Post Increment:{0}", i++);//11
+            Console.WriteLine("i is:{0}", i);//12
 
         }
     }

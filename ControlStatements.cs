@@ -47,7 +47,7 @@ namespace CSharp_Concepts
             int a = 10;
             int b = 20;
             int c = 30;
-            //Relational and Logical
+            //Relational(> < >= <= == !=) and Logical(&& || ^)
             //if((a>b)&&(a>c)) //&& - AND
             //{
             //    Console.WriteLine("A is the greatest");
@@ -80,7 +80,7 @@ namespace CSharp_Concepts
         {
             int coursecode;
             Console.WriteLine("Enter the Course Code");
-            coursecode =Convert.ToInt32(Console.ReadLine());
+            coursecode =Convert.ToInt32(Console.ReadLine()); //100
             switch(coursecode)
             {
                 case 100:
@@ -121,10 +121,10 @@ namespace CSharp_Concepts
         {
             Console.WriteLine("WHILE LOOP");
             //Syntax
-            int j=10;
+            int j=0;
             while(j<10)
             {
-                Console.WriteLine("The value is:{0}", j);
+                Console.WriteLine("The value is:{0}", j);//0.....9
                 j++;
             }
 
@@ -139,7 +139,7 @@ namespace CSharp_Concepts
             int k = 10;
             do
             {
-                Console.WriteLine("The value is:{0}", k);
+                Console.WriteLine("The value is:{0}", k);//10
                 k++;
             }while(k<10);
 

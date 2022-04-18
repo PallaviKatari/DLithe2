@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_Concepts", "CSharp_Concepts.csproj", "{2AE532D7-5FB8-4704-9A4B-F0DC632C4E2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp_Concepts", "CSharp_Concepts.csproj", "{2AE532D7-5FB8-4704-9A4B-F0DC632C4E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalAccessSpecifierDemo", "..\InternalAccessSpecifierDemo\InternalAccessSpecifierDemo.csproj", "{5CD818F0-5212-4B85-A596-9F2E78D5310A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2AE532D7-5FB8-4704-9A4B-F0DC632C4E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AE532D7-5FB8-4704-9A4B-F0DC632C4E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AE532D7-5FB8-4704-9A4B-F0DC632C4E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CD818F0-5212-4B85-A596-9F2E78D5310A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD818F0-5212-4B85-A596-9F2E78D5310A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD818F0-5212-4B85-A596-9F2E78D5310A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD818F0-5212-4B85-A596-9F2E78D5310A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
