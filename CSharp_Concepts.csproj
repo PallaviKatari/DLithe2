@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Concepts.GenericsDemo</StartupObject>
+    <StartupObject>CSharp_Concepts.ExceptionCustom1</StartupObject>
   </PropertyGroup>
 
 </Project>
